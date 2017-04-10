@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.uvol"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+    
+     <!-- 基础模块（必须加入以下声明）START -->
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.INTERNET"/>
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+<!-- 基础模块 END -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:name="com.prepare.ConnectLeancloud">
+        
+        <!-- 实时通信模块、推送（均需要加入以下声明） START -->
+        <service android:name="com.avos.avoscloud.PushService"/>
+        <receiver android:name="com.avos.avoscloud.AVBroadcastReceiver">
+       <intent-filter>
+      <action android:name="android.intent.action.BOOT_COMPLETED"/>
+      <action android:name="android.intent.action.USER_PRESENT"/>
+      <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+      </intent-filter>
+       </receiver>
+      <!-- 实时通信模块、推送 END -->
+
+  <!-- 反馈组件（需要加入以下声明）START -->
+  <activity
+     android:name="com.avos.avoscloud.feedback.ThreadActivity" >
+  </activity>
+  <!-- 反馈组件 END -->
+  
+        <activity
+            android:name="com.prepare.Login"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.uvol.FragementFabu"/>
+        <activity android:name="com.example.uvol.FragementMain"/>
+        <activity android:name="com.example.uvol.FragementSelf"/>
+        <activity android:name="com.example.uvol.MainActivity"/>
+        <activity android:name="com.example.uvol.MyActivity"/>
+        <activity android:name="com.example.uvol.shouye"/>
+        <activity android:name="com.example.uvol.EnterActivity"/>
+        <activity android:name="com.example.uvol.ActContent"/>
+        <activity android:name="com.example.uvol.ActContentDetail"/>
+        <activity android:name="com.example.uvol.ZuzhiDetail"/>
+        <activity android:name="com.example.uvol.ActJoinUser"/>
+        <activity android:name="com.example.uvol.SearchAct"/>
+        <activity android:name="com.example.uvol.SearchZuzhi"/>
+        <activity android:name="com.example.uvol.Activitys"></activity>
+        <activity android:name="com.prepare.Register"/>
+        <activity android:name="com.prepare.FindPass"/>
+        <activity android:name="com.person.SelfManage"/>
+        <activity android:name="com.person.ModifInfo"/>
+        <activity android:name="com.person.MyShoucang"/>
+        <activity android:name="com.person.MyZuzhi"/>
+        <activity android:name="com.person.Rongyu"/>
+        <activity android:name="com.person.Qiandao"/>
+    </application>
+
+</manifest>

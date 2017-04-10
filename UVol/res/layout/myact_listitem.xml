@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    >
+    
+    <LinearLayout
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp" >
+
+        //活动名称
+    <TextView
+        android:id="@+id/tv_listName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="爱心辅导"
+        android:background="@drawable/list_pattern"/>
+
+    //时间
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingTop="6dp"
+        android:background="@drawable/list_pattern">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/time" />
+
+        <TextView
+            android:id="@+id/tv_listTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:paddingLeft="8dp"
+            android:textColor="@color/temp"
+            android:text="开始: 2016/11/16 07:00\n结束: 2016/11/16 15:30 "/>
+
+    </LinearLayout>
+
+    //地点
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingTop="6dp"
+        android:background="@drawable/list_pattern">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/didian" />
+
+        <TextView
+            android:id="@+id/tv_listPlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:paddingLeft="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/temp"
+            android:text="地点: 四川成都双流县文星镇光明小区 "/>
+
+    </LinearLayout>
+        
+    </LinearLayout>
+
+    </LinearLayout>

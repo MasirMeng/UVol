@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    //标题栏
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/blue"
+        android:paddingTop="8dp">
+
+        <Button
+            android:id="@+id/iv_back"
+            android:layout_width="35dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back"
+            />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="我的活动"
+            android:textColor="@color/white"
+            android:textStyle="normal"
+            android:textSize="25dip"
+            />
+
+    </RelativeLayout>
+
+
+    //顶部菜单
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+        <!-- 所有活动 -->
+        <RelativeLayout
+            android:id="@+id/menu_all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:onClick="clickMyType"
+            >
+
+            <TextView
+                android:id="@+id/tv_menu_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:text="我发布"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/v_all"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignBottom="@+id/tv_menu_all"
+                android:background="@color/white"
+                />
+
+            />
+        </RelativeLayout>
+
+        <!-- 已参加活动 -->
+        <RelativeLayout
+            android:id="@+id/menu_past"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:onClick="clickMyType"
+            >
+
+            <TextView
+                android:id="@+id/tv_menu_past"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:text="已报名"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/v_past"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignBottom="@+id/tv_menu_past"
+                android:background="@color/white"
+                />
+
+            />
+        </RelativeLayout>
+
+        <!-- 未参加活动 -->
+        <RelativeLayout
+            android:id="@+id/menu_future"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:onClick="clickMyType"
+            >
+
+            <TextView
+                android:id="@+id/tv_menu_future"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:text="已签到"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/v_future"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignBottom="@+id/tv_menu_future"
+                android:background="@color/white"
+                />
+
+            />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/myact_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"></ListView>
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/bg_gray">
+              
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5" 
+        android:orientation="vertical">
+        
+          //标题栏
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/blue"
+        android:paddingTop="8dp">
+
+        <Button
+            android:id="@+id/iv_back"
+            android:layout_width="35dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back"
+            />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="活动签到"
+            android:textColor="@color/white"
+            android:textStyle="normal"
+            android:textSize="25dip"
+            />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_canyuzhe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+        
+    </LinearLayout>
+    
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+    
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#2ecc71" />
+
+            <TextView
+                android:id="@+id/btn_all"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="全选"
+                android:textColor="#2ecc71"
+                android:background="@color/white"
+                android:textSize="18sp"/>
+
+            <RelativeLayout
+                android:id="@+id/btn_canjia"
+                android:layout_weight="0.5"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:layout_gravity="center"
+                android:background="#2ecc71"
+                android:orientation="horizontal" >
+
+
+                <TextView
+                    android:id="@+id/woyaocanjia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="确认"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dip"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_toLeftOf="@id/woyaocanjia"
+                    android:src="@drawable/qiandao" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+     
+    
+</LinearLayout>

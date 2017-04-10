@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+
+        //灰色区域
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="8dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            //白色区域布局
+            <LinearLayout
+               
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                >
+
+                //第一行
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    //卫生医疗
+                    <LinearLayout
+                        android:id="@+id/weisheng"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:onClick="clickAct"
+                        >
+                        <ImageView
+                            android:id="@+id/iv_weisheng"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ws"/>
+                        <TextView
+                            android:id="@+id/tv_weisheng"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/temp"
+                            android:paddingTop="8dp"
+                            android:text="卫生医疗"/>
+
+                        />
+                    </LinearLayout>
+
+                    //支教助学
+                    <LinearLayout
+                        android:id="@+id/zhijiao"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:onClick="clickAct"
+                        >
+                        <ImageView
+                            android:id="@+id/iv_zhijiao"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/zj"/>
+                        <TextView
+                            android:id="@+id/tv_zhijiao"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/temp"
+                            android:paddingTop="8dp"
+                            android:text="爱心支教"/>
+
+                        />
+                    </LinearLayout>
+
+                    //文化艺术
+                    <LinearLayout
+                        android:id="@+id/wenhua"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:onClick="clickAct"
+                        >
+                        <ImageView
+                            android:id="@+id/iv_wenhua"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/whys"/>
+                        <TextView
+                            android:id="@+id/tv_wenhua"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/temp"
+                            android:paddingTop="8dp"
+                            android:text="文化艺术"/>
+
+                        />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                //第二行
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    //生态环保
+                    <LinearLayout
+                        android:id="@+id/shengtai"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:onClick="clickAct"
+                        >
+                        <ImageView
+                            android:id="@+id/iv_shengtai"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/sthb"/>
+                        <TextView
+                            android:id="@+id/tv_shengtai"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/temp"
+                            android:paddingTop="8dp"
+                            android:text="生态环境"/>
+
+                        />
+                    </LinearLayout>
+
+                    //动物
+                    <LinearLayout
+                        android:id="@+id/dongwu"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:onClick="clickAct"
+                        >
+                        <ImageView
+                            android:id="@+id/iv_dongwu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/dw"/>
+                        <TextView
+                            android:id="@+id/tv_dongwu"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/temp"
+                            android:paddingTop="8dp"
+                            android:text="保护动物"/>
+
+                        />
+                    </LinearLayout>
+
+                    //儿童
+                    <LinearLayout
+                        android:id="@+id/retong"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:onClick="clickAct"
+                        >
+                        <ImageView
+                            android:id="@+id/iv_retong"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rt"/>
+                        <TextView
+                            android:id="@+id/tv_retong"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/temp"
+                            android:paddingTop="8dp"
+                            android:text="关爱儿童"/>
+
+                        />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                //第三行
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    //助学捐款
+                    <LinearLayout
+                        android:id="@+id/juankuan"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:onClick="clickAct"
+                        >
+                        <ImageView
+                            android:id="@+id/iv_juankuan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/xsjk"/>
+
+                        <TextView
+                            android:id="@+id/tv_juankuan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="8dp"
+                            android:text="助学捐款"
+                            android:textColor="@color/temp" />
+
+                        />
+                    </LinearLayout>
+
+                    //老人
+                    <LinearLayout
+                        android:id="@+id/laoren"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:onClick="clickAct"
+                        >
+                        <ImageView
+                            android:id="@+id/iv_laoren"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/lr"/>
+                        <TextView
+                            android:id="@+id/tv_laoren"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/temp"
+                            android:paddingTop="8dp"
+                            android:text="关爱老人"/>
+
+                        />
+                    </LinearLayout>
+
+                    //其他
+                    <LinearLayout
+                        android:id="@+id/qita"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="20dp"
+                        android:onClick="clickAct"
+                        >
+                        <ImageView
+                            android:id="@+id/iv_qita"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/other"/>
+                        <TextView
+                            android:id="@+id/tv_qita"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/temp"
+                            android:paddingTop="8dp"
+                            android:text="全部"/>
+
+                        />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/gray_light"
+                    />
+                
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp">
+                    
+                    <ImageView
+                        android:id="@+id/search_act"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:onClick="searchAct"
+                        android:src="@drawable/find_huodong" />
+                    
+                    <View
+                    android:layout_width="3dp"
+                    android:layout_height="110dp"
+                    android:background="@color/gray_light"
+                    />
+                    
+
+                    <ImageView
+                        android:id="@+id/search_zuzhi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:onClick="searchZuzhi"
+                    android:src="@drawable/find_zuzhi"/>
+                    
+                </LinearLayout>
+                
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/gray_light"
+                    />
+                
+                        //推荐活动
+        <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="10dp">
+                    
+                    <ImageView
+                      android:id="@+id/iv_weisheng"
+                      android:layout_width="30dp"
+                      android:layout_height="30dp"
+                      android:background="@drawable/tuijian"/>
+                   <TextView
+                            android:id="@+id/tv_weisheng"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/temp"
+                            android:paddingTop="8dp"
+                            android:text="向您推荐以下活动"/>
+                    
+                </LinearLayout>
+                
+        
+
+    </LinearLayout>
+
+
+                
+               
+                
+                
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+        
+        
+    </LinearLayout>
+
+

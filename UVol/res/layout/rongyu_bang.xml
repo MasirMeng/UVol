@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+     //标题栏
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/blue"
+        android:paddingTop="8dp">
+
+        <Button
+            android:id="@+id/iv_back"
+            android:layout_width="35dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back"
+            />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="荣誉榜"
+            android:textColor="@color/white"
+            android:textStyle="normal"
+            android:textSize="25dip"
+            />
+
+    </RelativeLayout>
+    
+    //顶部菜单
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+        <!-- 个人 -->
+        <RelativeLayout
+            android:id="@+id/menu_person"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:onClick="clickHonorType"
+            >
+
+            <TextView
+                android:id="@+id/honor_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="#FF2F2F2F"
+                android:textSize="20sp"
+                android:text="个人" />
+
+            <View
+                android:id="@+id/v_person"
+                android:layout_width="match_parent"
+                android:layout_height="2sp"
+                android:layout_alignBottom="@+id/honor_person"
+                android:background="@color/white" />
+
+        </RelativeLayout>
+      
+       <!-- 组织 -->
+        <RelativeLayout
+            android:id="@+id/menu_zuzhi"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:onClick="clickHonorType"
+            >
+
+            <TextView
+                android:id="@+id/tv_menu_future"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="#FF2F2F2F"
+                android:textSize="20sp"
+                android:text="组织" />
+
+            <View
+                android:id="@+id/v_zuzhi"
+                android:layout_width="match_parent"
+                android:layout_height="2sp"
+                android:layout_alignBottom="@+id/tv_menu_future"
+                android:background="@color/white"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <View
+         android:layout_width="match_parent"
+         android:layout_height="8dp"
+         android:background="@color/bg_gray"
+    />
+    <ListView 
+        android:id="@+id/honor_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        
+    </ListView>
+    
+    
+
+</LinearLayout>

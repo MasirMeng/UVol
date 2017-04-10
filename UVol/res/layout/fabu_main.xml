@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+    
+  <LinearLayout 
+      android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        //标题栏
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:background="@color/blue"
+            android:paddingTop="8dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="活动发布"
+                android:textColor="@color/white"
+                android:textStyle="normal"
+                android:textSize="25dip"
+                />
+
+        </RelativeLayout>
+
+        //活动名称
+        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="50dip"
+		        android:orientation="horizontal"
+		        android:paddingLeft="30dip"
+		        android:layout_marginTop="12dip"
+		        android:background="#FFFFFFFF">
+		        <ImageView
+		            android:layout_height="30dp"
+		            android:layout_width="30dp"
+		            android:src="@drawable/mingchen"
+		            android:layout_gravity="center_vertical"/>
+
+		        <EditText
+		            android:id="@+id/huodong_name"
+		            android:layout_width="0dip"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center_vertical"
+		            android:layout_marginLeft="12dip"
+		            android:layout_weight="1"
+		            android:background="@null"
+		            android:hint="活动名称"
+		            android:maxLines="1"
+		            android:singleLine="true"
+		            android:textColor="#FF2F2F2F"
+		            android:textColorHint="#FF999898"
+		            android:textSize="15sp" />
+		
+		 </LinearLayout>
+		
+		 <View
+		        android:layout_height="1px"
+		        android:layout_width="match_parent"
+		        android:layout_marginLeft="30dip"
+		        android:layout_marginRight="30dip"
+		        android:background="#ffdad7cf"/>
+		 
+		 //活动内容
+		 <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:paddingLeft="30dip"
+		        android:paddingTop="10dp"
+		        android:paddingRight="10dp"
+		        android:paddingBottom="10dip"
+		        android:background="#FFFFFFFF">
+
+		        <ImageView
+		            android:layout_width="30dp"
+		            android:layout_height="30dp"
+		            android:layout_gravity="top|center_vertical"
+		            android:src="@drawable/neirong" />
+
+		        <EditText
+		            android:id="@+id/huodong_neirong"
+		            android:layout_width="0dip"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="start"
+		            android:layout_marginLeft="6dip"
+		            android:layout_weight="1"
+		            android:background="@drawable/editsharp"
+		            android:gravity="top|center_vertical"
+		            android:hint="活动内容"
+		            android:inputType="textMultiLine"
+		            android:maxLines="10"
+		            android:minLines="8"
+		            android:scrollbars="vertical"
+		            android:textColor="#FF2F2F2F"
+		            android:textColorHint="#FF999898"
+		            android:textSize="15sp" />
+		
+		 </LinearLayout>
+		
+		 <View
+		        android:layout_height="1px"
+		        android:layout_width="match_parent"
+		        android:layout_marginLeft="30dip"
+		        android:layout_marginRight="30dip"
+		        android:background="#ffdad7cf"/>
+		 
+		//活动地点
+        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="50dip"
+		        android:orientation="horizontal"
+		        android:paddingLeft="30dip"
+		        android:background="#FFFFFFFF">
+		        <ImageView
+		            android:layout_height="30dp"
+		            android:layout_width="30dp"
+		            android:src="@drawable/didian"
+		            android:layout_gravity="center_vertical"/>
+
+		        <EditText
+		            android:id="@+id/huodong_didian"
+		            android:layout_width="0dip"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center_vertical"
+		            android:layout_marginLeft="12dip"
+		            android:layout_weight="1"
+		            android:background="@null"
+		            android:hint="活动地点"
+		            android:maxLines="1"
+		            android:singleLine="true"
+		            android:textColor="#FF2F2F2F"
+		            android:textColorHint="#FF999898"
+		            android:textSize="15sp" />
+		
+		 </LinearLayout>
+		
+		 <View
+		        android:layout_height="1px"
+		        android:layout_width="match_parent"
+		        android:layout_marginLeft="30dip"
+		        android:layout_marginRight="30dip"
+		        android:background="#ffdad7cf"/>
+		 
+		//活动时间
+        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="50dip"
+		        android:orientation="horizontal"
+		        android:paddingLeft="32dip"
+		        android:background="#FFFFFFFF">
+		        <ImageView
+		            android:layout_height="27dp"
+		            android:layout_width="27dp"
+		            android:src="@drawable/time"
+		            android:layout_gravity="center_vertical"/>
+
+		        <EditText
+		            android:id="@+id/huodong_shijian"
+		            android:layout_width="0dip"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center_vertical"
+		            android:layout_marginLeft="12dip"
+		            android:layout_weight="1"
+		            android:background="@null"
+		            android:hint="活动时间"
+		            android:maxLines="1"
+		            android:singleLine="true"
+		            android:textColor="#FF2F2F2F"
+		            android:textColorHint="#FF999898"
+		            android:textSize="15sp" />
+		
+		 </LinearLayout>
+		 
+        //活动时长
+        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="50dip"
+		        android:orientation="horizontal"
+		        android:paddingLeft="28dip"
+		        android:background="#FFFFFFFF">
+		        <ImageView
+		            android:layout_height="33dp"
+		            android:layout_width="33dp"
+		            android:src="@drawable/tongji_time"
+		            android:layout_gravity="center_vertical"/>
+
+		        <EditText
+		            android:id="@+id/huodong_shichang"
+		            android:layout_width="0dip"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center_vertical"
+		            android:layout_marginLeft="11dip"
+		            android:layout_weight="1"
+		            android:background="@null"
+		            android:hint="活动时长"
+		            android:maxLines="1"
+		            android:singleLine="true"
+		            android:textColor="#FF2F2F2F"
+		            android:textColorHint="#FF999898"
+		            android:textSize="15sp" />
+		
+		 </LinearLayout>
+		
+		 <View
+		        android:layout_height="1px"
+		        android:layout_width="match_parent"
+		        android:layout_marginLeft="30dip"
+		        android:layout_marginRight="30dip"
+		        android:background="#ffdad7cf"/>
+		 
+		//活动类型
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFFFF"
+            android:orientation="vertical"
+            android:paddingLeft="30dip"
+            android:paddingTop="10dp" >
+		        
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                
+                <ImageView
+		            android:layout_width="30dp"
+		            android:layout_height="30dp"
+		            android:layout_gravity="top|center_vertical"
+		            android:src="@drawable/leixing" />
+		        
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center_vertical"
+		            android:layout_marginLeft="12dip"
+		            android:text="活动类型"
+		            android:textColor="#FF999898"
+		            android:textSize="15sp" />
+                
+            </LinearLayout>
+
+
+		            
+
+		        <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="2"
+                    android:layout_marginLeft="70dip"
+                    >
+
+                    <TableRow android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <CheckBox
+                            android:id="@+id/type_wsyl"                           
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="卫生医疗"
+                            android:textColor="#FF2F2F2F" />
+
+                        <CheckBox
+                            android:id="@+id/type_axzj"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dip"
+                            android:text="爱心支教" 
+                            android:textColor="#FF2F2F2F"/>
+                    </TableRow>
+                    <TableRow android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <CheckBox
+                            android:id="@+id/type_whys"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="文化艺术"
+                            android:textColor="#FF2F2F2F" />
+                        <CheckBox
+                            android:id="@+id/type_sthj"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dip"
+                            android:text="生态环境" 
+                            android:textColor="#FF2F2F2F"/>
+                    </TableRow>
+                    <TableRow android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <CheckBox
+                            android:id="@+id/type_bhdw"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="保护动物" 
+                            android:textColor="#FF2F2F2F"/>
+                        <CheckBox
+                            android:id="@+id/type_gaet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dip"
+                            android:text="关爱儿童"
+                            android:textColor="#FF2F2F2F" />
+                    </TableRow>
+                    <TableRow android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <CheckBox
+                            android:id="@+id/type_zxjk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="助学捐款" 
+                            android:textColor="#FF2F2F2F"/>
+                        <CheckBox
+                            android:id="@+id/type_galr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dip"
+                            android:text="关爱老人" 
+                            android:textColor="#FF2F2F2F"/>
+                    </TableRow>
+                    <TableRow android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <CheckBox
+                            android:id="@+id/type_else"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="其他"
+                            android:textColor="#FF2F2F2F" />
+                    </TableRow>
+                </TableLayout>
+		
+		 </LinearLayout>
+		
+		 <View
+		        android:layout_height="1px"
+		        android:layout_width="match_parent"
+		        android:layout_marginLeft="30dip"
+		        android:layout_marginRight="30dip"
+		        android:background="#ffdad7cf"/>
+		 
+		//需要人数
+        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="50dip"
+		        android:orientation="horizontal"
+		        android:paddingLeft="30dip"
+		        android:background="#FFFFFFFF">
+		        <ImageView
+		            android:layout_height="30dp"
+		            android:layout_width="30dp"
+		            android:src="@drawable/renshu"
+		            android:layout_gravity="center_vertical"/>
+
+		        <EditText
+		            android:id="@+id/huodong_renshu"
+		            android:layout_width="0dip"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center_vertical"
+		            android:layout_marginLeft="12dip"
+		            android:layout_weight="1"
+		            android:background="@null"
+		            android:hint="需要人数"
+		            android:maxLines="1"
+		            android:singleLine="true"
+		            android:textColor="#FF2F2F2F"
+		            android:textColorHint="#FF999898"
+		            android:textSize="15sp" />
+		
+		 </LinearLayout>
+		
+		 <View
+		        android:layout_height="1px"
+		        android:layout_width="match_parent"
+		        android:layout_marginLeft="30dip"
+		        android:layout_marginRight="30dip"
+		        android:background="#ffdad7cf"/>
+		 
+		//活动负责人
+        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="50dip"
+		        android:orientation="horizontal"
+		        android:paddingLeft="30dip"
+		        android:background="#FFFFFFFF">
+		        <ImageView
+		            android:layout_height="30dp"
+		            android:layout_width="30dp"
+		            android:src="@drawable/fuzeren"
+		            android:layout_gravity="center_vertical"/>
+
+		        <EditText
+		            android:id="@+id/huodong_fuze"
+		            android:layout_width="0dip"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center_vertical"
+		            android:layout_marginLeft="12dip"
+		            android:layout_weight="1"
+		            android:background="@null"
+		            android:hint="活动的负责人"
+		            android:maxLines="1"
+		            android:singleLine="true"
+		            android:textColor="#FF2F2F2F"
+		            android:textColorHint="#FF999898"
+		            android:textSize="15sp" />
+		
+		 </LinearLayout>
+		
+		 <View
+		        android:layout_height="1px"
+		        android:layout_width="match_parent"
+		        android:layout_marginLeft="30dip"
+		        android:layout_marginRight="30dip"
+		        android:background="#ffdad7cf"/>
+		 
+		//负责人电话
+        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="50dip"
+		        android:orientation="horizontal"
+		        android:paddingLeft="30dip"
+		        android:background="#FFFFFFFF">
+		        <ImageView
+		            android:layout_height="30dp"
+		            android:layout_width="30dp"
+		            android:src="@drawable/dianhua"
+		            android:layout_gravity="center_vertical"/>
+
+		        <EditText
+		            android:id="@+id/fuze_dianhua"
+		            android:layout_width="0dip"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center_vertical"
+		            android:layout_marginLeft="12dip"
+		            android:layout_weight="1"
+		            android:background="@null"
+		            android:hint="负责人电话"
+		            android:maxLines="1"
+		            android:singleLine="true"
+		            android:textColor="#FF2F2F2F"
+		            android:textColorHint="#FF999898"
+		            android:textSize="15sp" />
+		
+		 </LinearLayout>
+		
+		 <View
+		        android:layout_height="1px"
+		        android:layout_width="match_parent"
+		        android:layout_marginLeft="30dip"
+		        android:layout_marginRight="30dip"
+		        android:background="#ffdad7cf"/>
+		 
+	//添加图片
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="#FF999898"
+            android:textSize="15sp" 
+            android:text="可添加图片： "/>
+
+        <ImageButton
+            android:id="@+id/get_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/photo"/>
+
+    </LinearLayout>
+    
+     <ImageView
+         android:id="@+id/act_photo"
+         android:layout_margin="10dp"
+         android:layout_width="match_parent"
+         android:layout_height="120dp"
+         android:layout_gravity="center"
+         android:paddingTop="8dp"
+         android:scaleType="centerCrop"
+         android:src="@drawable/ph1" />
+
+        <Button 
+            android:id="@+id/btn_ack"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:text="发布"
+            android:textSize="22dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_shape2"
+            />
+        
+        </LinearLayout>
+
+
+
+
+</ScrollView>

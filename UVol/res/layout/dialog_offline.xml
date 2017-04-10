@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@drawable/offline_shape"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="20dp" >
+
+            <TextView
+                android:id="@+id/logout_confirm_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="确认要退出账号吗"
+                android:textColor="@color/text_color_gary"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#FFB8B8B8" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="15dip"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+            
+            <Button
+                android:id="@+id/cancle"
+                android:layout_height="42dip"
+                android:layout_width="112dip"
+                android:textColor="@color/text_color_gary"
+                android:textSize="16sp"
+                android:text="取消"
+                android:background="@color/white"/>
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_marginLeft="9dip"
+        android:layout_height="42dip"
+        android:layout_width="110dip"
+        android:textSize="16sp"
+        android:textColor="@color/juice"
+        android:text="确定"
+        android:background="@color/white"/>
+    </LinearLayout>
+   </LinearLayout>
+    
+
+</LinearLayout>
